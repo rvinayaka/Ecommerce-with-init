@@ -1,11 +1,9 @@
-from flask import Flask, jsonify
+from flask import jsonify
 from settings import connection, logger, handle_exceptions
-
-app = Flask(__name__)
-
+from functions import app
 
 "Functional API"
-@app.route("/app/v1/orders/<int:order_id>", methods = ["GET"], endpoint="get_order_details_of_user")
+@app.route("/app/v1/orders/<int:order_id>", methods = ["GET"], endpoint="get_order_details_of_order_id")
 @handle_exceptions
 def get_order_details_of_order_id(order_id):
     # starting the database connection

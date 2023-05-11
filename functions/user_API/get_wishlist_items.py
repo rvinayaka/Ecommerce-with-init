@@ -1,8 +1,6 @@
-from flask import Flask, jsonify
+from flask import jsonify
 from settings import connection, logger, handle_exceptions
-
-app = Flask(__name__)
-
+from functions import app
 
 """Functional API"""
 @app.route("/app/v1/wishlist/<int:user_id>", methods = ["GET"], endpoint="get_items_of_user_in_wishlist")

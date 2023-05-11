@@ -1,8 +1,7 @@
 import datetime
-from flask import Flask, request, jsonify
+from flask import request, jsonify
 from settings import connection, logger, handle_exceptions
-
-app = Flask(__name__)
+from functions import app
 
 """Admin API"""     # updating values to order_items table
 @app.route("/app/v1/<int:user_id>/orders/update_items", methods = ["PUT"], endpoint="updating_details_in_order_items_table")

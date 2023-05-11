@@ -1,7 +1,6 @@
-from flask import Flask, request, jsonify
+from flask import jsonify
 from settings import connection, logger, handle_exceptions
-
-app = Flask(__name__)
+from functions import app
 
 """Admin API"""
 # to delete vendor details

@@ -1,12 +1,10 @@
-import datetime
-from flask import Flask, request, jsonify
+from datetime import datetime
+from flask import request, jsonify
 from settings import connection, logger, handle_exceptions
-
-app = Flask(__name__)
-
+from functions import app
 
 """Admin API"""     # add new values to order_items table
-@app.route("/app/v1/<int:user_id>/orders/order_items/add_items ", methods = ["POST"])
+@app.route("/app/v1/<int:user_id>/orders/order_items/add_items ", methods = ["POST"], endpoint="add_new_items_to_order_items_table")
 @handle_exceptions
 def add_new_items_to_order_items_table(user_id):
     # starting the database connection
@@ -14,10 +12,12 @@ def add_new_items_to_order_items_table(user_id):
     # log connection details
     logger(__name__).warning("Start the db connection to add new items to cart(order_items) table")
 
-
     if not user_id:
         error_msg = "User id not given"
         raise Exception(error_msg)
+
+    if "user_id" and "product_id" and "quantity" not in request.json:
+        raise Exception("Data is insufficient")
 
     # Define a lambda function to extract values from JSON data
     extract_key = lambda key: request.json.get(key)
@@ -26,7 +26,7 @@ def add_new_items_to_order_items_table(user_id):
     user_id = extract_key('userId')
     product_id = extract_key('productId')
     quantity = extract_key('quantity')
-    time = datetime.datetime.now()
+    time = datetime.now()
 
     # Execute the query to fetch the price of the product with the given
     cur.execute("SELECT price FROM products WHERE product_id = %s", (product_id, ))

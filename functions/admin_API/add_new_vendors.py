@@ -1,7 +1,6 @@
-from flask import Flask, request, jsonify
+from flask import request, jsonify
 from settings import connection, logger, handle_exceptions
-
-app = Flask(__name__)
+from functions import app
 
 """Admin API"""
 # to add vendor details
@@ -12,6 +11,9 @@ def add_new_vendors():
     cur, conn = connection()
     # log connection details
     logger(__name__).warning("Start the db connection to insert values in vendor table")
+
+    if "name" and "contact" and "address" not in request.json:
+        raise Exception("Data is insufficient")
 
     # Get values from the user
     data = request.get_json()
@@ -25,8 +27,6 @@ def add_new_vendors():
     #     "address": "402, street, colony"
     # }
 
-    if not all([vendor_name, contact, address]):
-        return jsonify({"error": "Given data is insufficient, check all the values properly"})
 
     query = """INSERT INTO vendor (vendor_name, vendor_contact, address) VALUES(%s, %s, %s)"""
     values = (vendor_name, contact, address)

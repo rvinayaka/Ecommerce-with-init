@@ -1,9 +1,9 @@
-from flask import Flask, request, jsonify
+from flask import request, jsonify
 from settings import connection, logger, handle_exceptions
+from functions import app
 
-# app = Flask(__name__)
 """Admin API"""
-@app.route("/app/v1/<int:product_id>/vendor_rating/insert", methods = ["POST"])
+@app.route("/app/v1/<int:product_id>/vendor_rating/insert", methods = ["POST"], endpoint="add_new_vendor_ratings_of_product")
 @handle_exceptions
 def add_new_vendor_ratings_of_product(product_id):
     # starting the database connection
@@ -35,6 +35,7 @@ def add_new_vendor_ratings_of_product(product_id):
     # }
 
     if not all([vendor_id, user_id, ratings, review, time, feedback]):
+        # raise Exception("data is insufficient")
         return jsonify({"error": "Given data is insufficient, check all the values properly"})
 
     query = """INSERT INTO vendor_ratings (vendor_id, user_id, ratings, review, 

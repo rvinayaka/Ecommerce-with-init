@@ -1,7 +1,6 @@
-from flask import Flask, request, jsonify
+from flask import request, jsonify
 from settings import connection, logger, handle_exceptions
-
-app = Flask(__name__)
+from functions import app
 
 """Admin API"""
 # to update vendor details
@@ -18,11 +17,15 @@ def update_vendor_details(vendor_id):
         error_msg = "Vendor id is not available"
         raise Exception(error_msg)
 
+    if "name" and "contact" and "address" not in request.json:
+        raise Exception("Data is insufficient")
+
     # Get values from the user
     data = request.get_json()
     vendor_name = data.get('name')
     contact = data.get('contact')
     address = data.get('address')
+
 
     if vendor_name:
         cur.execute("UPDATE vendor SET vendor_name = %s WHERE vendor_id = %s", (vendor_name, vendor_id))

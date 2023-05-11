@@ -1,8 +1,6 @@
-import datetime
-from flask import Flask, jsonify
 from settings import connection, logger, handle_exceptions
-
-app = Flask(__name__)
+from functions import app
+import datetime
 
 """Admin API"""     # add new values to order_table
 @app.route("/app/v1/<int:user_id>/orders/add_order", methods = ["POST"], endpoint="add_new_order_to_order_table")

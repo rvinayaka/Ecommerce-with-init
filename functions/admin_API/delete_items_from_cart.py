@@ -1,7 +1,7 @@
-from flask import Flask, jsonify
+from flask import jsonify
 from settings import connection, logger, handle_exceptions
+from functions import app
 
-app = Flask(__name__)
 """Admin API"""
 @app.route("/app/v1/<int:user_id>/items/<int:product_id>", methods = ["DELETE"], endpoint="deleting_products_from_cart_of_user")
 @handle_exceptions

@@ -1,0 +1,10 @@
+WARNING : 2023-05-11 15:28:25,542 : functions.user_API.get_wishlist_items : Start the db connection to get items of user from wishlist table
+ERROR : 2023-05-11 15:28:25,686 : settings : Error occurred 2: 'NoneType' object is not subscriptable
+WARNING : 2023-05-11 15:28:32,373 : functions.admin_API.update_vendor_details : Start the db connection to update values in vendor table
+WARNING : 2023-05-11 15:28:33,230 : functions.admin_API.update_vendor_details : Updating value successful, hence closing the connection
+WARNING : 2023-05-11 15:33:51,667 : functions.admin_API.add_new_vendors : Start the db connection to insert values in vendor table
+ERROR : 2023-05-11 15:33:51,668 : settings : Error occurred 2: tuple index out of range
+WARNING : 2023-05-11 15:36:57,094 : functions.admin_API.add_new_vendors : Start the db connection to insert values in vendor table
+ERROR : 2023-05-11 15:36:57,095 : settings : Error occurred 2: tuple index out of range
+WARNING : 2023-05-11 15:37:31,745 : functions.admin_API.add_new_vendors : Start the db connection to insert values in vendor table
+WARNING : 2023-05-11 15:37:32,061 : functions.admin_API.add_new_vendors : Inserting value successful, hence closing the connection

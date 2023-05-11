@@ -1,7 +1,6 @@
-from flask import Flask, jsonify
+from flask import jsonify
 from settings import connection, logger, handle_exceptions
-
-app = Flask(__name__)
+from functions import app
 
 "Functional API"
 @app.route("/app/v1/<int:user_id>/orders/", methods = ["GET"], endpoint="get_order_details_of_user")

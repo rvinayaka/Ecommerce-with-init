@@ -1,7 +1,6 @@
-from flask import Flask, jsonify
+from flask import jsonify
 from settings import connection, logger, handle_exceptions
-
-app = Flask(__name__)
+from functions import app
 
 """Functional API"""
 @app.route("/app/v1/vendor_rating/<int:vendor_id>", methods=["GET"], endpoint='get_all_ratings_of_current_vendor_id')
@@ -24,8 +23,7 @@ def get_all_ratings_of_current_vendor_id(vendor_id):
         return jsonify({"message": "Vendor not found"}), 200
 
     cur.execute("SELECT v.vendor_name, v.vendor_contact, v.address, r.ratings, r.review "
-                "FROM vendor_ratings r JOIN vendor v ON r.vendor_id = r.vendor_id "
-                "WHERE vendor_id = %s", (vendor_id, ))
+                "FROM vendor_ratings r JOIN vendor v ON r.vendor_id = r.vendor_id;")
 
     get_details = cur.fetchall()[0]
 

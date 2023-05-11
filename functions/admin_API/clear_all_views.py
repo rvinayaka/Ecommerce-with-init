@@ -1,7 +1,6 @@
-from flask import Flask, request, jsonify, flash, redirect, url_for
+from flask import jsonify
 from settings import connection, logger, handle_exceptions
-
-app = Flask(__name__)
+from functions import app
 
 """Admin API"""
 @app.route("/app/v1/wishlist/<int:user_id>/clear", methods = ["DELETE"], endpoint="clearing_views_of_user")

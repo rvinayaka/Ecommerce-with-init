@@ -1,11 +1,10 @@
 import datetime
-from flask import Flask, request, jsonify, flash, redirect, url_for
+from flask import request, jsonify, flash, redirect, url_for
 from settings import connection, logger, handle_exceptions
-
-app = Flask(__name__)
+from functions import app
 
 """Admin API"""
-@app.route("/app/v1/users/<int:user_id>/recently_viewed/add", methods = ["POST"])
+@app.route("/app/v1/users/<int:user_id>/recently_viewed/add", methods = ["POST"], endpoint="adding_views_in_recently_viewed_list")
 @handle_exceptions
 def adding_views_in_recently_viewed_list(user_id):
     # starting the database connection
@@ -18,6 +17,9 @@ def adding_views_in_recently_viewed_list(user_id):
         error_msg = "User id not given"
         raise Exception(error_msg)
 
+    if "user_id" and "product_id" and "reviews_count" not in request.json:
+        raise Exception("Data is insufficient")
+
     # Define a lambda function to extract values from JSON data
     extract_key = lambda key: request.json.get(key)
 
@@ -26,6 +28,7 @@ def adding_views_in_recently_viewed_list(user_id):
     product_id = extract_key('productId')
     reviews_count = extract_key('reviewsCount')
     time = datetime.datetime.now()
+
 
     # {
     #     "user_id": 1,

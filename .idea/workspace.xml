@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="99933417-2278-405f-9188-c7eb2d5914d1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/old_Structure.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/e commerce.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/admin_API/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/admin_API/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/admin_API/add_items_to_wishlist.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/admin_API/add_items_to_wishlist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/admin_API/add_new_items_in_cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/admin_API/add_new_items_in_cart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/admin_API/add_new_orders.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/admin_API/add_new_orders.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/admin_API/add_new_vendor_ratings.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/admin_API/add_new_vendor_ratings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/admin_API/add_new_vendors.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/admin_API/add_new_vendors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/admin_API/add_new_view_details.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/admin_API/add_new_view_details.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/admin_API/all_admin_operations.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/admin_API/clear_all_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/admin_API/clear_all_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/admin_API/clear_wishlist.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/admin_API/clear_wishlist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/admin_API/delete_items_from_cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/admin_API/delete_items_from_cart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/admin_API/delete_items_from_wishlist.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/admin_API/delete_items_from_wishlist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/admin_API/delete_vendor_ratings.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/admin_API/delete_vendor_ratings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/admin_API/deleting_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/admin_API/deleting_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/admin_API/update_cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/admin_API/update_cart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/admin_API/update_orders.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/admin_API/update_orders.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/admin_API/update_vendor_details.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/admin_API/update_vendor_details.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/admin_API/update_views_count.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/admin_API/update_views_count.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/user_API/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/user_API/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/user_API/all_user_operations.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/user_API/get_all_ratings_of_vendor.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/user_API/get_all_ratings_of_vendor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/user_API/get_avg_ratings_of_vendor.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/user_API/get_avg_ratings_of_vendor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/user_API/get_order_details_by_order_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/user_API/get_order_details_by_order_id.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/user_API/get_order_details_of_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/user_API/get_order_details_of_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/user_API/get_ratings_of_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/user_API/get_ratings_of_product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/user_API/get_wishlist_items.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/user_API/get_wishlist_items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Flask Main" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2PdrricFYR1kFCfVsmcgQVlk8Yy" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/bc2113451/Desktop/projects/old_Structure/app.py",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Flask server.Flask (app.py)">
+    <configuration name="old_Structure" type="PythonConfigurationType" factoryName="Python">
+      <module name="old_Structure" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python3.8" />
+      <option name="SDK_NAME" value="Python 3.8" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Flask (app.py)" type="Python.FlaskServer" nameIsGenerated="true">
+      <module name="old_Structure" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="/usr/bin/python3.8" />
+      <option name="SDK_NAME" value="Python 3.8" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Flask server.Flask (app.py)" />
+      <item itemvalue="Python.old_Structure" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="99933417-2278-405f-9188-c7eb2d5914d1" name="Changes" comment="" />
+      <created>1683797999817</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683797999817</updated>
+      <workItem from="1683798001005" duration="1646000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/old_Structure$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1683799623431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+</project>

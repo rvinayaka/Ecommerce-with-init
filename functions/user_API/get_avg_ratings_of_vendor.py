@@ -1,7 +1,6 @@
-from flask import Flask, jsonify
+from flask import jsonify
 from settings import connection, logger, handle_exceptions
-
-app = Flask(__name__)
+from functions import app
 
 """Functional API"""
 @app.route("/app/v1/vendor_rating/<int:vendor_id>/average", methods=["GET"], endpoint='get_average_ratings_of_current_vendor_id')

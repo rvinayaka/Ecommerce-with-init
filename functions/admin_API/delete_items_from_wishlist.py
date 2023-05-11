@@ -1,7 +1,6 @@
-from flask import Flask, request, jsonify
+from flask import jsonify
 from settings import connection, logger, handle_exceptions
-
-app = Flask(__name__)
+from functions import app
 
 """Admin API"""
 @app.route("/app/v1/wishlist/<int:user_id>/remove/<int:product_id>", methods = ["DELETE"], endpoint="delete_items_of_user_in_wishlist")

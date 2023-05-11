@@ -1,10 +1,9 @@
-from flask import Flask, jsonify
+from flask import jsonify
 from settings import connection, logger, handle_exceptions
-
-app = Flask(__name__)
+from functions import app
 
 """Functional API"""
-@app.route("/app/v1/<int:product_id>/vendor_rating/<int:vendor_id>", methods=["GET"], endpoint='checkout')    # Calculate the total price
+@app.route("/app/v1/<int:product_id>/vendor_rating/<int:vendor_id>", methods=["GET"], endpoint='vendor_ratings_of_current_product')    # Calculate the total price
 @handle_exceptions
 def vendor_ratings_of_current_product(product_id, vendor_id):
     # starting the database connection

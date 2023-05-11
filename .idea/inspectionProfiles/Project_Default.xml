@@ -47,6 +47,7 @@
           <option value="dict.*" />
           <option value="str.strptime" />
           <option value="Bams.requirements.psycopg2" />
+          <option value="datetime.now" />
         </list>
       </option>
     </inspection_tool>
